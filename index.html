@@ -10,18 +10,28 @@
     <style>
         .my-element::-webkit-scrollbar {
             width: 0px;
-            /* For Chrome, Safari, and Edge */
             background: transparent;
-            /* Optional: For better visual appearance */
         }
     </style>
 </head>
 
-<body class="bg-black h-screen w-screen">
-    <main>
-        <div class="container flex flex-row h-screen w-5/6 m-auto gap-7 box-border">
-            <div class="w-5/6  flex">
-                <div class="w-4/12 gap-3  max-h-screen flex flex-col">
+<body class="w-screen bg-black h-screen">
+    <main class="h-full w-full max-w-[1500px] m-auto">
+        <div class="flex w-[96%] m-auto h-[6%] items-center justify-between sm:hidden">
+            <img class="object-cover h-10 rounded-full " src="./assets/Profile-img1.jpg" alt="">
+            <div class="invert h-12 flex items-center pl-4"><svg viewBox="0 0 24 24" aria-hidden="true"
+                class="h-8">
+                <g>
+                    <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                    </path>
+                </g>
+            </svg>
+        </div>
+        </div>
+        <div class="lg:container flex flex-row h-screen  w-full xl:w-11/12  2xl:w-5/6 lg:m-auto gap-7 px-1 lg:px-2">
+            <div class="w-full md:w-8/12   flex">
+                <div class="w-[10%] xl:w-4/12 gap-3 hidden   max-h-screen sm:flex flex-col overflow-auto my-element">
                     <div class="invert h-12 flex items-center pl-4"><svg viewBox="0 0 24 24" aria-hidden="true"
                             class="h-8">
                             <g>
@@ -34,27 +44,29 @@
                     <div>
                         <ul class="invert flex flex-col gap-1.5">
                             <li class="flex items-center gap-3 pl-4 py-2 rounded-3xl hover:bg-gray-100"><img class="h-7"
-                                    src="./svg/home.svg" alt="" srcset=""><span class="text-xl font-bold">Home</span>
+                                    src="./svg/home.svg" alt="" srcset=""><span
+                                    class="text-xl font-bold hidden xl:block">Home</span>
                             </li>
                             <li class="flex items-center gap-3 pl-4 py-2 rounded-3xl hover:bg-gray-100"><img class="h-7"
                                     src="./svg/search.svg" alt="" srcset=""><span
-                                    class="text-xl font-bold">Explore</span></li>
+                                    class="text-xl font-bold hidden xl:block">Explore</span></li>
                             <li class="flex items-center gap-3 pl-4 py-2 rounded-3xl hover:bg-gray-100"><img class="h-7"
-                                    src="./svg/notification.svg" alt="" srcset=""><span class="text-xl font-bold">
+                                    src="./svg/notification.svg" alt="" srcset=""><span
+                                    class="text-xl font-bold hidden xl:block">
                                     Notifications</span></li>
                             <li class="flex items-center gap-3 pl-4 py-2 rounded-3xl hover:bg-gray-100"><img class="h-7"
                                     src="./svg/msg.svg" alt="" srcset="">
-                                <span class="text-xl font-bold">Messages</span>
+                                <span class="text-xl font-bold hidden xl:block">Messages</span>
                             </li>
                             <li class="flex items-center gap-3 pl-4 py-2 rounded-3xl hover:bg-gray-100"><img
                                     class="h-7 invert " src="./svg/grok1.svg" alt="" srcset=""><span
-                                    class="text-xl font-bold">Grok</span></li>
+                                    class="text-xl font-bold hidden xl:block">Grok</span></li>
                             <li class="flex items-center gap-3 pl-4 py-2 rounded-3xl hover:bg-gray-100"><img class="h-7"
                                     src="./svg/bookMark.svg" alt="" srcset=""><span
-                                    class="text-xl font-bold">Bookmarks</span></li>
+                                    class="text-xl font-bold hidden xl:block">Bookmarks</span></li>
                             <li class="flex items-center gap-3 pl-4 py-2 rounded-3xl hover:bg-gray-100"><img class="h-7"
                                     src="./svg/community.svg" alt="" srcset=""><span
-                                    class="text-xl font-bold">Communities</span></li>
+                                    class="text-xl font-bold hidden xl:block">Communities</span></li>
                             <li class="flex items-center gap-3 pl-4 py-2 rounded-3xl hover:bg-gray-100"><svg
                                     viewBox="0 0 24 24" aria-hidden="true" class="h-7">
                                     <g>
@@ -62,34 +74,43 @@
                                             d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
                                         </path>
                                     </g>
-                                </svg><span class="text-xl font-bold">Premium</span></li>
+                                </svg><span class="text-xl font-bold hidden xl:block">Premium</span></li>
                             <li class="flex items-center gap-3 pl-4 py-2 rounded-3xl hover:bg-gray-100"><img class="h-7"
                                     src="./svg/verification.svg" alt="" srcset=""><span
-                                    class="text-xl font-bold">Verfied Orgs</span></li>
+                                    class="text-xl font-bold hidden xl:block">Verfied Orgs</span></li>
                             <li class="flex items-center gap-3 pl-4 py-2 rounded-3xl hover:bg-gray-100"><img class="h-7"
                                     src="./svg/account.svg" alt="" srcset=""><span
-                                    class="text-xl font-bold">Profile</span></li>
+                                    class="text-xl font-bold hidden xl:block">Profile</span></li>
                             <li class="flex items-center gap-3 pl-4 py-2 rounded-3xl hover:bg-gray-100"><img class="h-7"
-                                    src="./svg/more.svg" alt="" srcset=""><span class="text-xl font-bold">More</span>
+                                    src="./svg/more.svg" alt="" srcset=""><span
+                                    class="text-xl font-bold hidden xl:block">More</span>
                             </li>
+                            <li class="xl:hidden  pl-4 py-2 rounded-3xl "><img class="h-7" src="./svg/upload.svg" alt=""
+                                    srcset="">
+                            </li>
+
                         </ul>
                     </div>
-                    <div class="w-4/5 r text-center content-center rounded-3xl mt-3  h-12 bg-white font-bold">Post</div>
-                    <div class="flex gap-4 box-border w-full pl-4 rounded-3xl hover:bg-gray-950 items-center mt-4">
+                    <div
+                        class="w-4/5  text-center content-center rounded-3xl mt-3  h-12 bg-white font-bold hidden xl:block">
+                        <span>Post</span>
+                    </div>
+                    <div class="flex gap-4 box-border w-full p-2 rounded-3xl hover:bg-gray-950 items-center xl:mt-4 ">
                         <div><img class="object-cover h-10 rounded-full" src="./assets/Profile-img1.jpg" alt=""></div>
-                        <div class="flex flex-col invert">
+                        <div class="xl:flex flex-col invert hidden ">
                             <div>Sanjay Yadav</div>
                             <div>@yadav_sanjay_05</div>
                         </div>
-                        <div class="invert"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <div class="invert hidden xl:block"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                             </svg>
                         </div>
                     </div>
                 </div>
-                <div class="w-9/12  border-x border-gray-600 max-h-full overflow-y-auto relative my-element">
+                <div
+                    class="w-full sm:w-[90%]  xl:w-9/12  border-x border-gray-600 max-h-full overflow-y-auto relative my-element">
                     <div
                         class="flex justify-around text-white border-y box-border backdrop-blur-sm bg-[#0808089e] border-gray-600 h-[6vh]  items-center sticky w-full top-0 left-0">
                         <div class="hover:border-b-4 hover: border-blue-600 h-full flex items-center box-content">For
@@ -102,7 +123,7 @@
                             <div class="h-40 w-[12%] flex justify-center"><img class="h-10 ml-1 mt-5 rounded-full "
                                     src="./assets/Profile-img1.jpg" alt=""></div>
                             <div class="text-white w-[88%] h-[100%] pr-4">
-                                <div class="text-xl py-4 text-gray-500"> What is Happening ?</div>
+                                <div class="text-xl py-4 text-gray-500 pl-1"> What is Happening ?</div>
                                 <div class="flex gap-2 items-center justify-start pl-2 pt-1 pb-3"><img class=" h-4"
                                         src="./svg/golob.svg" alt="" srcset="">
                                     <span class="text-sm font-rgb text-[rgba(29,155,240,1)]">Everyone can reply</span>
@@ -254,37 +275,46 @@
                     </div>
                 </div>
             </div>
-            <div class=" w-2/6 text-white flex flex-col gap-4 overflow-auto max-h-screen my-element relative">
-                <div class="pt-2 sticky top-0 left-0 bg-black" ><input class="rounded-3xl bg-[#222222] w-full h-11 p-4 text-center" type="search" name="search" id="search" placeholder="Search"></div>
+            <div
+                class="w-4/12 hidden   text-white md:flex flex-col gap-4 overflow-auto max-h-screen my-element relative text-xs xl:text-base">
+                <div class="pt-2 sticky top-0 left-0 bg-black"><input
+                        class="rounded-3xl bg-[#222222] w-full h-11 p-4 text-center" type="search" name="search"
+                        id="search" placeholder="Search"></div>
                 <div class="flex flex-col gap-3 border-gray-700 border-2 rounded-xl p-3">
                     <div class="font-bold text-xl">Try Premium for free today</div>
                     <div>Upgrade your experience with less ads, power tools, and more with Premium.</div>
-                    <div class="bg-white text-black w-4/6 rounded-3xl h-9 flex justify-center items-center font-bold">Start 14-day free trial</div>
+                    <div class="bg-white text-black w-4/6 rounded-3xl h-9 flex justify-center items-center font-bold">
+                        Start 14-day free trial</div>
                 </div>
                 <div class="flex flex-col gap-3 border-gray-700 border-2 rounded-xl p-3">
                     <div class="font-bold text-xl">Try Premium for free today</div>
                     <div>Upgrade your experience with less ads, power tools, and more with Premium.</div>
-                    <div class="bg-white text-black w-4/6 rounded-3xl h-9 flex justify-center items-center font-bold">Start 14-day free trial</div>
+                    <div class="bg-white text-black w-4/6 rounded-3xl h-9 flex justify-center items-center font-bold">
+                        Start 14-day free trial</div>
                 </div>
                 <div class="flex flex-col gap-3 border-gray-700 border-2 rounded-xl p-3">
                     <div class="font-bold text-xl">Try Premium for free today</div>
                     <div>Upgrade your experience with less ads, power tools, and more with Premium.</div>
-                    <div class="bg-white text-black w-4/6 rounded-3xl h-9 flex justify-center items-center font-bold">Start 14-day free trial</div>
+                    <div class="bg-white text-black w-4/6 rounded-3xl h-9 flex justify-center items-center font-bold">
+                        Start 14-day free trial</div>
                 </div>
                 <div class="flex flex-col gap-3 border-gray-700 border-2 rounded-xl p-3">
                     <div class="font-bold text-xl">Try Premium for free today</div>
                     <div>Upgrade your experience with less ads, power tools, and more with Premium.</div>
-                    <div class="bg-white text-black w-4/6 rounded-3xl h-9 flex justify-center items-center font-bold">Start 14-day free trial</div>
+                    <div class="bg-white text-black w-4/6 rounded-3xl h-9 flex justify-center items-center font-bold">
+                        Start 14-day free trial</div>
                 </div>
                 <div class="flex flex-col gap-3 border-gray-700 border-2 rounded-xl p-3">
                     <div class="font-bold text-xl">Try Premium for free today</div>
                     <div>Upgrade your experience with less ads, power tools, and more with Premium.</div>
-                    <div class="bg-white text-black w-4/6 rounded-3xl h-9 flex justify-center items-center font-bold">Start 14-day free trial</div>
+                    <div class="bg-white text-black w-4/6 rounded-3xl h-9 flex justify-center items-center font-bold">
+                        Start 14-day free trial</div>
                 </div>
                 <div class="flex flex-col gap-3 border-gray-700 border-2 rounded-xl p-3">
                     <div class="font-bold text-xl">Try Premium for free today</div>
                     <div>Upgrade your experience with less ads, power tools, and more with Premium.</div>
-                    <div class="bg-white text-black w-4/6 rounded-3xl h-9 flex justify-center items-center font-bold">Start 14-day free trial</div>
+                    <div class="bg-white text-black w-4/6 rounded-3xl h-9 flex justify-center items-center font-bold">
+                        Start 14-day free trial</div>
                 </div>
                 <div></div>
                 <div></div>
